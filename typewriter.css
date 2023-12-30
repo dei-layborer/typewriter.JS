@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "TT2020";
+    src: url('./font/TT2020StyleE-Regular.woff2');
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    min-height: calc((1vw + 1vh) * 75);
+    box-shadow: 0 0 0 black, 0 0 6em #8a4d0f inset;
+    background: #fffef0;
+    margin: 0;
+    padding: 2em;
+ }
+
+ #display {
+    position: absolute;
+    left: 30vw;
+    bottom: 1.3em;
+    display: flex;
+    align-items: flex-end;
+    margin: 2vh auto 0 auto;
+    width: 40vw;
+    height: 95vh;
+ }
+
+ #display p {
+    font-family: "TT2020";
+    font-size: 1.25em;
+    font-feature-settings: 'frac', 'calt';
+    margin: 0;
+ }
+
+ #input-area {
+    position: absolute;
+    bottom: 0;
+    left: 30vw;
+    width: 40vw;
+    height: 1.25em;
+    border: 1px solid black;
+    resize: none;
+    padding: 0;
+    background: transparent;
+    font-family: "TT2020";
+    font-size: 1.25em;
+    font-feature-settings: 'frac', 'calt';
+ }
+
+ #input-area:focus {
+    outline: 0;
+ }
